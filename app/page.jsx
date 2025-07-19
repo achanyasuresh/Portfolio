@@ -15,7 +15,7 @@ const Home = () => {
   const handleDownloadCV = () => {
     try {
        const resumeUrl = '/resume.pdf';
-    const fallbackUrl = 'https://raw.githubusercontent.com/achanyasuresh/Portfolio/main/public/resume.pdf';
+    const fallbackUrl = 'https://raw.githubusercontent.com/achanyasuresh/Portfolio/master/public/resume.pdf';
       const link = document.createElement("a");
       link.href = resumeUrl;
       link.download = "Achanya_Suresh_Resume.pdf";
