@@ -14,7 +14,7 @@ import Contact from "./contact/page";
 const Home = () => {
   const handleDownloadCV = () => {
     try {
-      const resumeUrl = "https://github.com/achanyasuresh/Portfolio/blob/master/public/assets/resume/resume.pdf";
+      const resumeUrl = "https://raw.githubusercontent.com/achanyasuresh/Portfolio/master/public/assets/resume/resume.pdf";
       const link = document.createElement("a");
       link.href = resumeUrl;
       link.download = "Achanya_Suresh_Resume.pdf";
