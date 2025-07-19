@@ -12,24 +12,28 @@ import Resume from "./resume/page";
 import Contact from "./contact/page";
 
 const Home = () => {
-  const handleDownloadCV = () => {
-    try {
-       const resumeUrl = '/resume.pdf';
-    const fallbackUrl = 'https://raw.githubusercontent.com/achanyasuresh/Portfolio/master/public/resume.pdf';
-      const link = document.createElement("a");
-      link.href = resumeUrl;
-      link.download = "Achanya_Suresh_Resume.pdf";
-       link.onerror = () => {
-      window.open(fallbackUrl, '_blank');
+ const handleDownloadCV = () => {
+  try {
+    // Correct path to your resume in the public folder
+    const resumeUrl = '/resume.pdf';
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Achanya_Suresh_Resume.pdf";
+    
+    // Fallback to GitHub raw URL if needed
+    link.onerror = () => {
+      window.open('https://raw.githubusercontent.com/achanyasuresh/Portfolio/master/public/resume.pdf', '_blank');
     };
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (error) {
-      console.error("Error downloading resume:", error);
-      alert("Failed to download resume. Please try again later.");
-    }
-  };
+    
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } catch (error) {
+    console.error("Error downloading resume:", error);
+    // Provide alternative options if download fails
+    window.open('https://raw.githubusercontent.com/achanyasuresh/Portfolio/master/public/resume.pdf', '_blank');
+  }
+};
 
   return (
     <div className="flex flex-col min-h-screen">
