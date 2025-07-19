@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Photo = () => {
+  const basePath = "/Portfolio";
+
   return (
     <div className="w-full h-full relative">
       <motion.div
@@ -23,7 +25,7 @@ const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
-            src="/assets/photo.png"
+            src={`${basePath}/assets/photo.png`}
             priority
             quality={100}
             fill
