@@ -18,7 +18,7 @@ const projects = [
     title: "Fabuloso Event Management",
     description: "Comprehensive platform for event planning with real-time notifications and admin dashboards.",
     stack: ["React", "Node.js", "MongoDB", "Firebase", "Twilio API", "Tailwind CSS"],
-    image: "/assets/work/1.png",
+    image: "/Portfolio/assets/work/1.png",
     live: "https://www.fabuloso.co.nz",
     github: "https://github.com/achanyasuresh/Fabulousoevent"
   },
@@ -28,7 +28,7 @@ const projects = [
     title: "Salt Mango Tree Web Application",
     description: "Restaurant management system with real-time order tracking and analytics.",
     stack: ["Next.js", "Firebase", "Stripe API", "Tailwind CSS", "Cloud Functions"],
-    image: "/assets/work/3.png",
+    image: "/Portfolio/assets/work/3.png",
     live: "https://www.saltmangotree.co.nz/",
     github: "https://github.com/achanyasuresh/"
   },
@@ -38,7 +38,7 @@ const projects = [
     title: "Māori Language Game",
     description: "Educational app for preserving Te Reo Māori with interactive learning.",
     stack: ["React Native", "Supabase", "Expo", "TypeScript"],
-    image: "/assets/work/4.jpg",
+    image: "/Portfolio/assets/work/4.jpg",
     live: "",
     github: "https://github.com/achanyasuresh/Maori-game"
   },
@@ -48,7 +48,7 @@ const projects = [
     title: "Food Ordering Application",
     description: "A food ordering application with payment integration.",
     stack: ["React.js", "HTML", "CSS","Node js", "MongoDB", "Express",],
-    image: "/assets/work/5.png",
+    image: "/Portfolio/assets/work/5.png",
     live: "",
     github: "https://github.com/achanyasuresh/FoodDelivery"
   }
@@ -178,6 +178,7 @@ const Work = () => {
                       className="object-contain max-h-full max-w-full"
                       quality={100}
                       priority
+                      unoptimized 
                     />
 
                     {/* Overlay */}
